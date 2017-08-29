@@ -15,6 +15,8 @@
 		DD819DD91F41CFCE000EC3CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD819DD71F41CFCE000EC3CB /* LaunchScreen.storyboard */; };
 		DD819DE41F41CFCE000EC3CB /* KeyChinaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD819DE31F41CFCE000EC3CB /* KeyChinaDemoTests.m */; };
 		DD819DEF1F41CFCE000EC3CB /* KeyChinaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD819DEE1F41CFCE000EC3CB /* KeyChinaDemoUITests.m */; };
+		DD819DFE1F41D0EA000EC3CB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD819DFD1F41D0EA000EC3CB /* Security.framework */; };
+		DD819E011F41D10E000EC3CB /* KeyChina.m in Sources */ = {isa = PBXBuildFile; fileRef = DD819E001F41D10E000EC3CB /* KeyChina.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		DD819DEA1F41CFCE000EC3CB /* KeyChinaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyChinaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD819DEE1F41CFCE000EC3CB /* KeyChinaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyChinaDemoUITests.m; sourceTree = "<group>"; };
 		DD819DF01F41CFCE000EC3CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD819DFD1F41D0EA000EC3CB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DD819DFF1F41D10E000EC3CB /* KeyChina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChina.h; sourceTree = "<group>"; };
+		DD819E001F41D10E000EC3CB /* KeyChina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChina.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD819DFE1F41D0EA000EC3CB /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				DD819DE21F41CFCE000EC3CB /* KeyChinaDemoTests */,
 				DD819DED1F41CFCE000EC3CB /* KeyChinaDemoUITests */,
 				DD819DC71F41CFCE000EC3CB /* Products */,
+				DD819DFC1F41D0EA000EC3CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +112,8 @@
 				DD819DCD1F41CFCE000EC3CB /* AppDelegate.m */,
 				DD819DCF1F41CFCE000EC3CB /* ViewController.h */,
 				DD819DD01F41CFCE000EC3CB /* ViewController.m */,
+				DD819DFF1F41D10E000EC3CB /* KeyChina.h */,
+				DD819E001F41D10E000EC3CB /* KeyChina.m */,
 				DD819DD21F41CFCE000EC3CB /* Main.storyboard */,
 				DD819DD51F41CFCE000EC3CB /* Assets.xcassets */,
 				DD819DD71F41CFCE000EC3CB /* LaunchScreen.storyboard */,
@@ -138,6 +147,14 @@
 				DD819DF01F41CFCE000EC3CB /* Info.plist */,
 			);
 			path = KeyChinaDemoUITests;
+			sourceTree = "<group>";
+		};
+		DD819DFC1F41D0EA000EC3CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD819DFD1F41D0EA000EC3CB /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +224,7 @@
 				TargetAttributes = {
 					DD819DC51F41CFCE000EC3CB = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = B7UQ7WHB5T;
 						ProvisioningStyle = Automatic;
 					};
 					DD819DDE1F41CFCE000EC3CB = {
@@ -274,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD819DD11F41CFCE000EC3CB /* ViewController.m in Sources */,
+				DD819E011F41D10E000EC3CB /* KeyChina.m in Sources */,
 				DD819DCE1F41CFCE000EC3CB /* AppDelegate.m in Sources */,
 				DD819DCB1F41CFCE000EC3CB /* main.m in Sources */,
 			);
@@ -424,7 +443,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B7UQ7WHB5T;
 				INFOPLIST_FILE = KeyChinaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MiaoJH.KeyChinaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +456,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B7UQ7WHB5T;
 				INFOPLIST_FILE = KeyChinaDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MiaoJH.KeyChinaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +530,7 @@
 				DD819DF51F41CFCE000EC3CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD819DF61F41CFCE000EC3CB /* Build configuration list for PBXNativeTarget "KeyChinaDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +539,7 @@
 				DD819DF81F41CFCE000EC3CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD819DF91F41CFCE000EC3CB /* Build configuration list for PBXNativeTarget "KeyChinaDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +548,7 @@
 				DD819DFB1F41CFCE000EC3CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
